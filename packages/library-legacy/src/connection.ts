@@ -2301,7 +2301,7 @@ const ConfirmedTransactionMetaResult = pick({
           index: number(),
           instructions: array(
             pick({
-              accounts: array(number()),
+              accounts: nullable(array(number())),
               data: string(),
               programIdIndex: number(),
             }),
